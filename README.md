@@ -3,5 +3,6 @@ FiveM script made by Madriax
 
 # Installation
 
-Put everything in a folder name "apartments"
-Insert in citmp-server.yml: "- apartments"
+• Put all files in a folder called "apartments"
+• Add "- apartments" in citmp-server.yml
+• Import sql file to your database
