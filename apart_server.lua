@@ -10,14 +10,17 @@ local mode = "MySQL"
 if (mode == "Async") then
   require "resources/mysql-async/lib/MySQL"
 elseif mode == "MySQL" then
+  --require "resources/[essential]/essentialmode/lib/MySQL" IF YOU'RE USING LALIFE SCRIPT !
   require "resources/essentialmode/lib/MySQL"
+
+  --DO NOT FORGET TO CHANGE THE LINE BELLOW !!!
   MySQL:open("localhost", "DATABASE (default: gta5_gamemode_essential)", "USERNAME", "PASSWORD")
 end
 
 
 local lang = 'en'
 local txt = {
-  ['fr'] = {
+  	['fr'] = {
         ['welcome'] = 'Bienvenue dans votre appartement!\n',
         ['nocash'] = 'Vous n\'avez pas assez d\'argent!\n',
         ['estVendu'] = 'Appartement vendus!\n'
