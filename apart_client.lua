@@ -58,11 +58,11 @@ local txt = {
         ['fermermenu'] = 'Close menu',
         ['sonner'] = 'Ring the doorbell',
         ['gohome'] = 'Go to home',
-        ['vendre'] = 'Sell the apartment',
-        ['acheter'] = 'Buy the apartment',
+        ['vendre'] = 'Sell apartment',
+        ['acheter'] = 'Buy apartment',
         ['visiter'] = 'Visit the apartment',
         ['menu'] = 'Press ~g~E~s~ to open menu',
-        ['soon'] = 'This fonctionnlitie will come soon'
+        ['soon'] = 'This functionality will come soon'
     }
 }
 
