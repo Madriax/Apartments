@@ -1,3 +1,8 @@
+-------------------------------------------------
+--  SCRIPT MADE BY MADRIAX FOR GTARPFRANCE     --
+--		  https://discord.gg/fyytmPQ		   --
+-------------------------------------------------
+
 local displayApartBlips = true --SET TO TRUE IF YOU WANT TO ADD BLIPS FOR APPARTMENTS
 
 local interiors = {
