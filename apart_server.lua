@@ -231,7 +231,7 @@ AddEventHandler('apart:takedirtycash', function(cash, apart)
     if mode == "Async" then
       MySQL.Async.fetchAll("SELECT dirtymoney FROM user_appartement WHERE name = @nom", {['@nom'] = apart}, function (result)
           if (result) then
-            money = result[1].money
+            money = result[1].dirtymoney
             if (tonumber(cash) <= tonumber(money) and tonumber(cash) > 0) then
               user:addDMoney((cash))
               local newmoney = money - cash
@@ -247,7 +247,7 @@ AddEventHandler('apart:takedirtycash', function(cash, apart)
       local executed_query = MySQL:executeQuery("SELECT dirtymoney FROM user_appartement WHERE name = @nom", {['@nom'] = apart})
       local result = MySQL:getResults(executed_query, {'dirtymoney'})
       if (result) then
-        money = result[1].money
+        money = result[1].dirtymoney
         if (tonumber(cash) <= tonumber(money) and tonumber(cash) > 0) then
           user:addDMoney((cash))
           local newmoney = money - cash
