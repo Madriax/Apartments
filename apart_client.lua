@@ -304,7 +304,8 @@ function MenuAppartement()
                 Menu.addButton(txt[lang]['gohome'],"Visiter",nil)
                 Menu.addButton(txt[lang]['vendre'],"Vendre",nil)
             else
-                Menu.addButton(txt[lang]['acheter'],"Acheter",nil)
+                Menu.addButton("Prix: " .. interiors[i].price .. " $","privetimuseless",nil)
+		Menu.addButton(txt[lang]['acheter'],"Acheter",nil)
                 Menu.addButton(txt[lang]['visiter'],"Visiter",nil)
             end
             Menu.addButton(txt[lang]['fermermenu'],"CloseMenu",nil)
