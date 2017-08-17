@@ -1,8 +1,3 @@
--------------------------------------------------
---  SCRIPT MADE BY MADRIAX FOR GTARPFRANCE     --
---		  https://discord.gg/fyytmPQ		   --
--------------------------------------------------
-
 local displayApartBlips = true --SET TO TRUE IF YOU WANT TO ADD BLIPS FOR APPARTMENTS
 
 local interiors = {
@@ -45,7 +40,7 @@ local interiors = {
     [37] = { ["price"] = 100000, ["xe"] = -1565.64587402344, ["ye"] = -575.688049316406, ["ze"] = 108.522987365723, ["he"] = 0.00, ["xo"] = -1570.009765625, ["yo"] = -576.172729492188, ["zo"] = 114.449279785156, ["ho"] = 0.00, ["name"] = 'Maire Helipad'},
 }
 
-local lang = 'en'
+local lang = 'fr'
 
 local txt = {
   ['fr'] = {
@@ -167,12 +162,6 @@ function drawTxt(text,font,centre,x,y,scale,r,g,b,a)
     SetTextEntry("STRING")
     AddTextComponentString(text)
     DrawText(x , y)
-end
-
-function drawNotification(text)
-    SetNotificationTextEntry("STRING")
-    AddTextComponentString(text)
-    DrawNotification(false, false)
 end
 
 function MenuInsideAppartement()
@@ -317,7 +306,7 @@ function CloseMenu()
 end
 
 function Sonner()
-    drawNotification(txt[lang]['soon'])
+    exports.pNotify:SendNotification({text = txt[lang]['soon'], type = "error", timeout = 5000, layouts = "bottomCenter"})
 end
 
 function Vendre()
@@ -330,7 +319,6 @@ function Vendre()
 end
 
 function Acheter()
-    -- drawNotification('Cette fonctionnalite arrivera tres vite')
     for i=1, #interiors do
         if GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(-1)), interiors[i].xe,interiors[i].ye,interiors[i].ze, true) < 1.599 then
             TriggerServerEvent("apart:buyAppart", interiors[i].name, interiors[i].price)
