@@ -4,6 +4,7 @@ FiveM script made by Madriax
 # Installation
 
 • Essential Mode
+
 • pNotify
 
 # Installation
