@@ -16,11 +16,10 @@
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
-  <a href="#installation">Installation</a> •
   <a href="#prerequisites">Prerequisites</a> •
+  <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
   <a href="#contribution">Contribution</a> •
-  <a href="#special-thanks">Special Thanks</a> •
   <a href="#license">License</a>
 </p>
 
