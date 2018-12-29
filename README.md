@@ -20,6 +20,7 @@
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
   <a href="#contribution">Contribution</a> •
+  <a href="#members">Members</a> •
   <a href="#license">License</a>
 </p>
 
