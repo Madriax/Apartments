@@ -34,8 +34,8 @@
 
 ## Prerequisites
 
-* [EssentialMode](https://forum.fivem.net/t/release-essentialmode-base/3665) - pNotify simply implements a Javascript notification library called NOTY.
-* [pNotify](https://forum.fivem.net/t/release-pnotify-in-game-js-notifications-using-noty/20659) - EssentiaMode is a base resource which has money and permissions built in.
+* [EssentialMode](https://forum.fivem.net/t/release-essentialmode-base/3665) - EssentiaMode is a base resource which has money and permissions built in.
+* [pNotify](https://forum.fivem.net/t/release-pnotify-in-game-js-notifications-using-noty/20659) - pNotify simply implements a Javascript notification library called NOTY.
 
 ## Installation
 
